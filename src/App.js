@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import Header from './Header';
-import Perguntas from './Perguntas';
+import Deck from "./Deck";
 
 function App() {
   return (
     <ConteinerConteudo>
       <Box>
         <Header/>
-        <Perguntas/>
+        <Deck/>
       </Box>
     </ConteinerConteudo>
   );
