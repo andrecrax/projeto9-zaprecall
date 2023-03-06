@@ -57,7 +57,7 @@ onClick={() => startQuestion()}
 )}
 
   {step === 1 && (
-    <OpenQuestionBox data-test="flashcard">
+    <OpenQuestion data-test="flashcard">
       <h2 data-test="flashcard-text">{question}</h2>
       <img
         data-test="turn-btn"
@@ -65,7 +65,7 @@ onClick={() => startQuestion()}
         alt={turnArrow}
         onClick={() => replyCard()}
       />
-    </OpenQuestionBox>
+    </OpenQuestion>
   )}
 
   {step === 2 && (
@@ -139,7 +139,7 @@ const commonBoxStyles = {
   cursor: 'pointer',
   },
   });
-  const OpenQuestionBox = styled.div({
+  const OpenQuestion = styled.div({
   ...commonBoxStyles,
   position: 'relative',
   display:'wrap',
