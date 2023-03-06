@@ -6,7 +6,8 @@ import wrong from "../img/wrong.png";
 import doubt from "../img/doubt.png";
 import right from "../img/right.png";
 
-export default function Flashcards({ i, question, answer, counter, setCounter }) {
+export default function Perguntas({ i, question, answer, counter, setCounter }) {
+
 const [step, setStep] = useState(0);
 const [iconStart, setIconStart] = useState(start);
 const [color, setColor] = useState("");
@@ -45,7 +46,7 @@ if (color === "redAnswer") {
 return (
 <div>
 {step === 0 && (
-<ClosedCardBox data-test="flashcard">
+<ClosedCard data-test="flashcard">
 <h2 data-test="flashcard-text">PERGUNTA {i}</h2>
 <img
 data-test="play-btn"
@@ -53,7 +54,7 @@ src={start}
 alt="Botão par virar o card para a pergunta"
 onClick={() => startQuestion()}
 ></img>
-</ClosedCardBox>
+</ClosedCard>
 )}
 
   {step === 1 && (
@@ -71,7 +72,7 @@ onClick={() => startQuestion()}
   {step === 2 && (
     <OpenAnswer data-test="flashcard">
       <h2 data-test="flashcard-text">{answer}</h2>
-      <DivButtons>
+      <AnswerButtons>
         <Button
           data-test="no-btn"
           color="#FF3030"
@@ -93,7 +94,7 @@ onClick={() => startQuestion()}
         >
           Zap!
         </Button>
-      </DivButtons>
+      </AnswerButtons>
     </OpenAnswer>
   )}
 
@@ -120,7 +121,7 @@ const commonBoxStyles = {
   justifyContent: 'space-between',
   alignItems: 'center',
   };
-  const ClosedCardBox = styled.div({
+  const ClosedCard = styled.div({
   ...commonBoxStyles,
   h2: {
   backgroundColor: '#ffffff',
@@ -182,7 +183,7 @@ const commonBoxStyles = {
   marginBottom: '30px',
   },
   });
-  const DivButtons = styled.div({
+  const AnswerButtons = styled.div({
   backgroundColor: '#ffffd5',
   display: 'flex',
   justifyContent: 'space-between',
