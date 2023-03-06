@@ -21,7 +21,7 @@ function replyCard() {
 setStep(2);
 }
 
-function answeredFlashcard(color) {
+function answeredCard(color) {
 setStep(3);
 
 if (color === "redAnswer") {
@@ -76,21 +76,21 @@ onClick={() => startQuestion()}
         <Button
           data-test="no-btn"
           color="#FF3030"
-          onClick={() => answeredFlashcard("redAnswer")}
+          onClick={() => answeredCard("redAnswer")}
         >
           Não lembrei
         </Button>
         <Button
           data-test="partial-btn"
           color="#FF922E"
-          onClick={() => answeredFlashcard("orangeAnswer")}
+          onClick={() => answeredCard("orangeAnswer")}
         >
           Quase não lembrei
         </Button>
         <Button
           data-test="zap-btn"
           color="#2FBE34"
-          onClick={() => answeredFlashcard("greenAnswer")}
+          onClick={() => answeredCard("greenAnswer")}
         >
           Zap!
         </Button>
@@ -129,7 +129,6 @@ const commonBoxStyles = {
   fontFamily: 'Recursive, sans-serif',
   fontWeight: '700',
   fontSize: '16px',
-  lineHeight: '19px',
   color: '#333333',
   cursor: 'default',
   },
@@ -151,7 +150,6 @@ const commonBoxStyles = {
   fontFamily: 'Recursive',
   fontWeight: '400',
   fontSize: '18px',
-  lineHeight: '22px',
   color: '#333333',
   borderRadius: '5px',
   },
@@ -196,7 +194,6 @@ const commonBoxStyles = {
   fontFamily: 'Recursive',
   fontWeight: '400',
   fontSize: '12px',
-  lineHeight: '14px',
   color: '#ffffff',
   borderRadius: '5px',
   padding: '10px',
@@ -215,7 +212,6 @@ const commonBoxStyles = {
   fontFamily: 'Recursive, sans-serif',
   fontWeight: '700',
   fontSize: '16px',
-  lineHeight: '19px',
   textDecoration: 'line-through',
   color: props => props.color,
   cursor: 'default',
