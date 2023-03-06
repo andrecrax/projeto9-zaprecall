@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import React, { useState } from "react";
-import Header from './Header';
-import Deck from "./Deck";
-import Footer from './Footer';
+import Header from './components/Header';
+import Deck from "./components/Deck";
+import Footer from './components/Footer';
 
 function App() {
   const [counter, setCounter] = useState(0);
