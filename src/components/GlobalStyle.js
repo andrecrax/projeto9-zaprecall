@@ -136,6 +136,6 @@ table {
   box-sizing: border-box;
   background-color: #fb6b6b;
 }
-`
+`;
 
 export default GlobalStyle;

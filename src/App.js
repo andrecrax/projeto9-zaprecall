@@ -27,10 +27,10 @@ const ConteinerConteudo = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
- `
+ `;
 
 const Box = styled.div`
   width: 371px;
   height: 100%;
   background: #FB6B6B;
-`
+`;

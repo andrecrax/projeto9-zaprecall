@@ -34,4 +34,4 @@ export default function Header(){
       font-weight:400;
       color:white;
     }
-  `
+  `;
