@@ -50,7 +50,7 @@ return (
 <img
 data-test="play-btn"
 src={start}
-alt={start}
+alt="Botão par virar o card para a pergunta"
 onClick={() => startQuestion()}
 ></img>
 </ClosedCardBox>
@@ -62,7 +62,7 @@ onClick={() => startQuestion()}
       <img
         data-test="turn-btn"
         src={turnArrow}
-        alt={turnArrow}
+        alt="Botão para virar o card para a resposta"
         onClick={() => replyCard()}
       />
     </OpenQuestion>
@@ -100,7 +100,7 @@ onClick={() => startQuestion()}
   {step === 3 && (
     <FinishedAnswer data-test="flashcard" color={color}>
       <h2 data-test="flashcard-text">PERGUNTA {i}</h2>
-      <img data-test={dataTest} src={iconStart} alt={iconStart} />
+      <img data-test={dataTest} src={iconStart} alt="Verde para resposta correta, laranja para em dúvida e vermelho para errado" />
     </FinishedAnswer>
   )}
 </div>
