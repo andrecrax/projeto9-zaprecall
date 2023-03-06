@@ -1,5 +1,5 @@
 import React from "react";
-import Perguntas from "../Perguntas";
+import Perguntas from "./Perguntas";
 import cards from "../cards";
 
 export default function Deck({counter, setCounter}) {

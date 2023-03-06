@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import logo from './img/logo_zap.png';
+import logo from '../img/logo_zap.png';
 
 
 export default function Header(){

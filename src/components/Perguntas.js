@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import start from "./img/start.png";
-import turnArrow from "./img/turnArrow.png";
-import wrong from "./img/wrong.png";
-import doubt from "./img/doubt.png";
-import right from "./img/right.png";
+import start from "../img/start.png";
+import turnArrow from "../img/turnArrow.png";
+import wrong from "../img/wrong.png";
+import doubt from "../img/doubt.png";
+import right from "../img/right.png";
 
 export default function Flashcards({ i, question, answer, counter, setCounter }) {
 const [step, setStep] = useState(0);
