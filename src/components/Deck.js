@@ -6,7 +6,7 @@ export default function Deck({counter, setCounter}) {
   return (
     <>
       {cards.map((card, i) => (
-        <Perguntas 
+        <Perguntas
           key={i}
           i={i + 1}
           question={card.question}

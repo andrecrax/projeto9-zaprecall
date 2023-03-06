@@ -119,8 +119,7 @@ const commonBoxStyles = {
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-  }
-  
+  };
   const ClosedCardBox = styled.div({
   ...commonBoxStyles,
   h2: {
@@ -140,7 +139,6 @@ const commonBoxStyles = {
   cursor: 'pointer',
   },
   });
-  
   const OpenQuestionBox = styled.div({
   ...commonBoxStyles,
   position: 'relative',
@@ -165,7 +163,6 @@ const commonBoxStyles = {
   cursor: 'pointer',
   },
   });
-  
   const OpenAnswer = styled.div({
   ...commonBoxStyles,
   display:'wrap',
@@ -185,7 +182,6 @@ const commonBoxStyles = {
   marginBottom: '30px',
   },
   });
-  
   const DivButtons = styled.div({
   backgroundColor: '#ffffd5',
   display: 'flex',
@@ -193,7 +189,6 @@ const commonBoxStyles = {
   alignItems: 'center',
   cursor: 'pointer',
   });
-  
   const Button = styled.button({
   width: '70px',
   height: '50px',
@@ -211,7 +206,6 @@ const commonBoxStyles = {
   alignItems: 'center',
   textAlign: 'center',
   });
-  
   const FinishedAnswer = styled.div({
   ...commonBoxStyles,
   h2: {
