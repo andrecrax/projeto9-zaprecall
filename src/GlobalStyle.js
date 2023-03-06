@@ -110,6 +110,7 @@ section {
 body {
     line-height: 1;
     padding-top:120px;
+    padding-bottom:70px;
 }
 ol,
 ul {

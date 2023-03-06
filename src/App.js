@@ -1,14 +1,18 @@
 import styled from 'styled-components';
+import React, { useState } from "react";
 import Header from './Header';
 import Deck from "./Deck";
+import Footer from './Footer';
 
 function App() {
+  const [counter, setCounter] = useState(0);
   return (
     <ConteinerConteudo>
+      <Header/>
       <Box>
-        <Header/>
-        <Deck/>
+        <Deck counter={counter} setCounter={setCounter}/>
       </Box>
+      <Footer counter={counter}/>
     </ConteinerConteudo>
   );
 }
@@ -18,7 +22,7 @@ export default App;
 const ConteinerConteudo = styled.div`
   width: 100%;
   height: 100%;
-  background: #6C7A89;
+  background: #FB6B6B;
   display: flex;
   flex-direction: row;
   justify-content: center;
